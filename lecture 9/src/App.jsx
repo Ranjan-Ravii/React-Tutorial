@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [color, setColor] = useState("purple");
 
-  useEffect(() => {
+  useEffect(() => { // useEffect autometically triggered when file is rendered or re-rendered
     document.body.style.backgroundColor = color;
   }, [color]);
 
